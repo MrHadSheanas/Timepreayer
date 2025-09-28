@@ -1,0 +1,60 @@
+#bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#bg-phone{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+        display: none;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time1,#time2,#time3,#time4,#time5{
+    z-index:2000;
+    position: absolute;
+    top: 100px;
+    left:150px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+   
+}
+#time2{
+    left: 355px;
+}
+#time3{
+    left:555px;
+}
+#time4{
+    left:763px;
+}
+#time5{
+    left:970px;
+}
+#div-one{
+    position: relative;
+    top:200px;
+    width: 90%;
+
+
+}
+#icon1{
+    width: 200px;
+    height: 30vh;
+    background-color: rgba(197, 213, 255, 0.109);
+    position: relative;
+    top: 0px;
+    left: 100px;
+    z-index: 1000;
+}
