@@ -48,25 +48,6 @@ fetch(url)
   });
 
 
-function addHours(timeStr, hoursToAdd) {
-  let [hours, minutes] = timeStr.split(":").map(Number);
-  let totalMinutes = (hours + hoursToAdd) * 60 + minutes;
-
-  // Wrap around if it goes past midnight
-  totalMinutes = totalMinutes % 1440;
-
-  let newHours = Math.floor(totalMinutes / 60);
-  let newMinutes = totalMinutes % 60;
-
-  return `${String(newHours).padStart(2, '0')}:${String(newMinutes).padStart(2, '0')}`;
-}
-
-// Example usage
-let originalTime = "19:18";
-let newTime = addHours(originalTime, 2); // Adds 2 hours
-console.log("New time:", newTime); // Output: 21:18
-console.log(newTime);
-
 
 function subtractMinutes(timeStr, minutesToSubtract) {
   let [hours, minutes] = timeStr.split(":").map(Number);
@@ -76,3 +57,23 @@ function subtractMinutes(timeStr, minutesToSubtract) {
   let newMinutes = totalMinutes % 60;
   return `${String(newHours).padStart(2, '0')}:${String(newMinutes).padStart(2, '0')}`;
 }
+
+
+
+
+
+
+function updateClock(){
+    const now =new Date();
+    let hours = now.getHours();
+    const meridiem = hours >=12 ? "PM" : "AM";
+    hours =hours% 12 || 12;
+    hours =hours.toString().padStart(2, 0);
+    const minutes =now.getMinutes().toString().padStart(2,0);
+    const seconds =now.getSeconds().toString().padStart(2,0);
+    const timeStarting = `${hours}: ${minutes}: ${seconds} ${meridiem}`;
+    document.getElementById('clock').textContent = timeStarting;
+}
+
+updateClock();
+setInterval(updateClock,1000);

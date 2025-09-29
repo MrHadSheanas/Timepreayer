@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&family=Tagesschrift&display=swap');
+*{
+    font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #bg{
     width: 100%;
     height: 100vh;
@@ -24,12 +31,16 @@ body{
     z-index:2000;
     position: absolute;
     top: 100px;
-    left:150px;
+    left:145px;
     font-size: 2.5rem;
     font-weight: 700;
     display: flex;
+     font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
    
 }
+
 #time2{
     left: 355px;
 }
@@ -57,4 +68,55 @@ body{
     top: 0px;
     left: 100px;
     z-index: 1000;
+}
+#afghan{
+    position:absolute;
+    top: 80vh;
+    left: 40%;
+    z-index: 1000;
+
+}
+
+#time-one,#time-two,#time-tree,#time-fure,#time-five{
+    position: absolute;
+    top:50px;
+    left: 170px;
+    font-size: 1rem;
+     font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+#clock{
+    z-index: 1000;
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    text-align: center;
+    font-size: 2rem;
+    color: wheat;
+
+}
+.flag{
+    z-index: 1000;
+    width: 150px;
+    height: 100px;
+    position:absolute;
+    top: 30px;
+    left:13%;
+    border-radius: 8px;
+}
+.flag1{
+    left:75%;
+}
+#time-two{
+    left: 370px;
+}
+#time-tree{
+    left: 570px;
+}
+#time-fure{
+    left: 770px;
+}
+#time-five{
+    left: 970px;
 }
