@@ -120,3 +120,52 @@ body{
 #time-five{
     left: 970px;
 }
+
+#clock{
+    
+}
+#af{
+    position:absolute;
+    top: 60vh;
+    color:black;
+    z-index: 1000;
+    margin: auto;
+    text-align: center;
+    
+}
+#af h1,#af h2{
+    font-family: "Reem Kufi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+#af h2{
+ font-weight: 800;
+ position: relative;
+ top: -23px;
+
+}
+#af h3{
+    font-weight: 800;
+    position: relative;
+    top: -40px;
+}
+#icon-one,#icon-two{
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+    position: absolute;
+    top: 80vh;
+    left: 10%;
+    animation: rotate 10s alternate infinite;
+}
+#icon-two{
+    left: 80%;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(360deg) scale(0.4);
+
+    }
+    
+}
